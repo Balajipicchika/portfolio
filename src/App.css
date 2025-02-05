@@ -1,0 +1,65 @@
+/* .typing-loader {
+  font-size: 18px; 
+  font-family: "Courier New", Courier, monospace;
+  color: white; 
+  display: inline-block;
+  border-right: 3px solid white;
+  padding-right: 5px;
+  overflow: hidden;
+  width: 0; 
+  animation: typing 1s steps(20) 1s 1 normal forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10ch; 
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; 
+  }
+} */
+
+
+.typing-loader {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  display: flex;
+  gap: 4px;
+}
+
+.letter {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+  animation: scroll-in 0.5s ease-out forwards;
+}
+
+@keyframes scroll-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Delay each letter for sequential effect */
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.2s; }
+.letter:nth-child(3) { animation-delay: 0.4s; }
+.letter:nth-child(4) { animation-delay: 0.6s; }
+.letter:nth-child(5) { animation-delay: 0.8s; }
+.letter:nth-child(6) { animation-delay: 1s; }
+.letter:nth-child(7) { animation-delay: 1.2s; }
+.letter:nth-child(8) { animation-delay: 1.4s; }
+.letter:nth-child(9) { animation-delay: 1.6s; }
+.letter:nth-child(10) { animation-delay: 1.8s; }
