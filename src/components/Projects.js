@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card, Image, Modal, Button, Icon, Grid, Header, Divider } from "semantic-ui-react";
 import project1 from "../images/project1.png";
 import project2 from "../images/project2.png";
+import project3 from "../images/project3.png";
 
 const projects = [
   {
@@ -17,6 +18,13 @@ const projects = [
     link: "https://recruitment.iipe.ac.in/",
     description:
       "Developed a Faculty Recruitment Portal for IIPE using the PERN stack (PostgreSQL, Express, React, Node.js). Designed intuitive UI and ensured a scalable application.",
+  },
+  {
+    title: "Oral Disease Classification",
+    image: project3,
+    link: "https://oral-disease-classification.onrender.com/",
+    description:
+      "Developed an oral disease classification model using EfficientNetB0 and CBAM to analyze dental images. Achieved 94% accuracy across five disease types, enhancing detection effectiveness.",
   },
 ];
 
