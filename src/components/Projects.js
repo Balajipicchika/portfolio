@@ -57,7 +57,7 @@ const Projects = () => {
         Projects
       </Header>
       <Divider style={{ borderColor: "#00adb5", width: "50px", margin: "0 auto" }} />
-      <Grid columns={2} stackable centered style={{marginTop: "20px"}}>
+      <Grid columns={2} stackable style={{marginTop: "20px"}}>
         {projects.map((project, index) => (
           <Grid.Column key={index}>
             <Card fluid raised onClick={() => handleOpen(project)}>
