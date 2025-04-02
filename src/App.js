@@ -37,6 +37,12 @@
 
 // export default App;
 
+// git add .
+// git commit -m "massage"
+// git push origin master
+// npm run build 
+// npm run deploy
+
 import Portfolio from "./Portfolio";
 import React, { useEffect, useState } from "react";
 import "./App.css";
