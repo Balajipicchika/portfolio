@@ -41,16 +41,16 @@ const Education = () => {
   return (
     <div>
       {/* <h2>Academics</h2> */}
-      <Header as="h2" style={{ color: "#00adb5", fontSize: "2.5rem", textAlign: "center" }}>
+      <Header as="h2" style={{ color: "#ffffff", fontSize: "2.5rem", textAlign: "center" }}>
         Academics
       </Header>
-      <Divider style={{ borderColor: "#00adb5", width: "50px", margin: "0 auto" }} />
+      <Divider style={{ borderColor: "orange", width: "50px", margin: "0 auto" }} />
       <Divider />
       <Grid style={{ fontSize: fontSize }}>
         {educationData.map((edu, index) => (
           <Grid.Row key={index} columns={2}>
             <Grid.Column>
-              <p>
+              <p style={{color: "orange"}}>
                 <strong>{edu.degree}</strong>
               </p>
             </Grid.Column>

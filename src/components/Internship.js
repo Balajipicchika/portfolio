@@ -41,10 +41,10 @@ const Internship = () => {
 
   return (
     <div>
-      <Header as="h2" style={{ color: "#00adb5", fontSize: "2.5rem", textAlign: "center" }}>
+      <Header as="h2" style={{ color: "#ffffff", fontSize: "2.5rem", textAlign: "center" }}>
         Internships
       </Header>
-      <Divider style={{ borderColor: "#00adb5", width: "50px", margin: "0 auto" }} />
+      <Divider style={{ borderColor: "orange", width: "50px", margin: "0 auto" }} />
       <Divider />
       <Grid style={{ fontSize: fontSize }}>
         {internships.map((internship, index) => (
@@ -55,7 +55,7 @@ const Internship = () => {
             onClick={() => handleOpen(internship)}
           >
             <Grid.Column>
-              <p>
+              <p style={{color: "orange"}}>
                 <strong>{internship.role}</strong>
               </p>
             </Grid.Column>

@@ -45,7 +45,7 @@ const Projects = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Initial call to set font size
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -53,10 +53,10 @@ const Projects = () => {
   return (
     <div>
       {/* <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Projects</h2> */}
-      <Header as="h2" style={{ color: "#00adb5", fontSize: "2.5rem", textAlign: "center" }}>
+      <Header as="h2" style={{ color: "#ffffff", fontSize: "2.5rem", textAlign: "center" }}>
         Projects
       </Header>
-      <Divider style={{ borderColor: "#00adb5", width: "50px", margin: "0 auto" }} />
+      <Divider style={{ borderColor: "orange", width: "50px", margin: "0 auto" }} />
       <Grid columns={2} stackable centered style={{marginTop: "20px"}}>
         {projects.map((project, index) => (
           <Grid.Column key={index}>
