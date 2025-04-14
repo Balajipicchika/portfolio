@@ -3,6 +3,7 @@ import { Card, Image, Modal, Button, Icon, Grid, Header, Divider } from "semanti
 import project1 from "../images/project1.png";
 import project2 from "../images/project2.png";
 import project3 from "../images/project3.png";
+import project4 from "../images/project4.png";
 
 const projects = [
   {
@@ -26,6 +27,15 @@ const projects = [
     description:
       "Developed an oral disease classification model using EfficientNetB0 and CBAM to analyze dental images. Achieved 94% accuracy across five disease types, enhancing detection effectiveness.",
   },
+  {
+    title: "Country Explorer",
+    image: project4,
+    link: "https://country-search-omega-silk.vercel.app/",
+    description:
+      "Built a full-stack Country Explorer app using REST APIs to fetch real-time country data. Implemented advanced search, filters, and a chatbot using React (frontend) and Node.js (backend). Enabled dynamic data visualization and improved user experience with interactive UI components.",
+  }
+  
+
 ];
 
 const Projects = () => {
